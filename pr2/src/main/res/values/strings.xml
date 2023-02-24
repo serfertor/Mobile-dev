@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">pr2</string>
+    <string name="full_name">practise2</string>
+    <string name="main_information">Hello world!!!</string>
+    <string name="result">Success!</string>
+    <string name="enter_inf">Здесь будет информация с другой страницы</string>
+    <string name="entering_inf">Введите ваш текст для передачи</string>
+</resources>
