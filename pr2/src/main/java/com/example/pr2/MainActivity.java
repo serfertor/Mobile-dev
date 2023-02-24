@@ -19,9 +19,18 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     private static final String TAG = "My app";
-    /* final Button button1 = (Button)findViewById(R.id.button_1);
-    final Button button2 = (Button)findViewById(R.id.button_2);
-    final Button button3 = (Button)findViewById(R.id.button_3); */
+
+    ActivityResultLauncher<Intent> mStartForResult = registerForActivityResult(
+            new ActivityResultContracts.StartActivityForResult(),
+            new ActivityResultCallback<ActivityResult>() {
+                @Override
+                public void onActivityResult(ActivityResult result) {
+                    Intent intent = result.getData();
+                    String enter = intent.getStringExtra("message");
+                    TextView text = (TextView) findViewById(R.id.for_result);
+                    text.setText(enter);
+                }
+            });
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,9 +39,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Button button1 = (Button)findViewById(R.id.button_1);
         Button button2 = (Button)findViewById(R.id.button_2);
         Button button3 = (Button)findViewById(R.id.button_3);
+        Button button4 = (Button)findViewById(R.id.button_4);
         button1.setOnClickListener(this);
         button2.setOnClickListener(this);
         button3.setOnClickListener(this);
+        button4.setOnClickListener(this);
     }
 
 
@@ -61,18 +72,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 Intent intent4 = new Intent(this, ResultActivity.class);
                 EditText text4 = (EditText) findViewById(R.id.entering_text);
                 intent4.putExtra("enter", text4.getText());
-                ActivityResultLauncher<Intent> mStartForResult = registerForActivityResult(
-                        new ActivityResultContracts.StartActivityForResult(),
-                        new ActivityResultCallback<ActivityResult>() {
-                            @Override
-                            public void onActivityResult(ActivityResult result) {
-                                String enter = result.getData().toString();
-                                TextView text = (TextView) findViewById(R.id.for_result);
-                                text.setText(enter);
-                            }
-                        });
+                Log.w(TAG, "Click button");
                 mStartForResult.launch(intent4);
-                startActivity(intent4);
         }
     }
 }

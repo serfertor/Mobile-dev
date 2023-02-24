@@ -18,15 +18,16 @@ public class ResultActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.result_layout);
-        Log.w(TAG, "FRREEREEEEEE");
-        EditText enter = (EditText) findViewById(R.id.result_editText);
-        String text = String.valueOf(enter.getText());
-        Intent data = new Intent();
-        data.setData(Uri.parse(text));
+
         Button button = (Button) findViewById(R.id.send_button);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                EditText enter = (EditText) findViewById(R.id.result_editText);
+                String text = String.valueOf(enter.getText());
+                Log.w(TAG, text);
+                Intent data = new Intent();
+                data.putExtra("message", text);
                 setResult(1, data);
                 finish();
             }
