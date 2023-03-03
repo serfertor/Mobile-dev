@@ -37,6 +37,13 @@
             android:text="For result"
             />
 
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="93dp"
+            android:id="@+id/button_5"
+            android:text="Fragment example"
+            />
+
         <EditText
             android:id="@+id/entering_text"
             android:layout_width="fill_parent"

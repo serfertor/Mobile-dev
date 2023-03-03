@@ -20,6 +20,7 @@
         <activity android:name=".ActivityRelative" />
         <activity android:name=".ActivityLinear" />
         <activity android:name=".ResultActivity" />
+        <activity android:name=".ActivityForFragment" />
     </application>
 
 </manifest>

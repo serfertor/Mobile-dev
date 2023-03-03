@@ -75,6 +75,7 @@ public class MenuLayoutFragment extends Fragment {
             Button button2 = view.findViewById(R.id.button_2);
             Button button3 = view.findViewById(R.id.button_3);
             Button button4 = view.findViewById(R.id.button_4);
+            Button button5 = view.findViewById(R.id.button_5);
             EditText enterText = (EditText) view.findViewById(R.id.entering_text);
             Log.d(TAG, "onViewCreated");
             Toast.makeText(getActivity(), "On ViewCreated", Toast.LENGTH_SHORT).show();
@@ -106,6 +107,13 @@ public class MenuLayoutFragment extends Fragment {
                 @Override
                 public void onClick(View view) {
                     mListener.onFragmentToDataListener("text");
+                }
+            });
+            button5.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent4 = new Intent(getActivity(), ActivityForFragment.class);
+                    startActivity(intent4);
                 }
             });
         }
@@ -165,6 +173,4 @@ public class MenuLayoutFragment extends Fragment {
             Log.d(TAG, "onDetach");
             Toast.makeText(getActivity(), "on Detach", Toast.LENGTH_SHORT).show();
         }
-
-
 }
