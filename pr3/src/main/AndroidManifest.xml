@@ -4,11 +4,9 @@
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="pr3"
+        android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
-        <activity
-            android:name=".ResultActivity" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
@@ -21,6 +19,7 @@
         <activity android:name=".ActivityMain" />
         <activity android:name=".ActivityRelative" />
         <activity android:name=".ActivityLinear" />
+        <activity android:name=".ResultActivity" />
     </application>
 
 </manifest>

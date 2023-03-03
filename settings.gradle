@@ -16,3 +16,4 @@ rootProject.name = "My Application"
 include ':app'
 include ':pr1'
 include ':pr2'
+include ':pr3'
