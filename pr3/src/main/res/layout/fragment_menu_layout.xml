@@ -10,36 +10,34 @@
         android:orientation="vertical">
 
         <Button
-            android:layout_width="fill_parent"
-            android:layout_height="93dp"
             android:id="@+id/button_1"
-            android:text="Constraint Layout"
-            />
+            android:layout_width="fill_parent"
+            android:layout_height="85dp"
+            android:text="Constraint Layout" />
 
         <Button
-            android:layout_width="fill_parent"
-            android:layout_height="93dp"
             android:id="@+id/button_2"
-            android:text="Linear Layout"
-            />
+            android:layout_width="fill_parent"
+            android:layout_height="85dp"
+            android:text="Linear Layout" />
 
         <Button
             android:layout_width="fill_parent"
-            android:layout_height="93dp"
+            android:layout_height="85dp"
             android:id="@+id/button_3"
             android:text="Relative Layout"
             />
 
         <Button
             android:layout_width="fill_parent"
-            android:layout_height="93dp"
+            android:layout_height="85dp"
             android:id="@+id/button_4"
             android:text="For result"
             />
 
         <Button
             android:layout_width="fill_parent"
-            android:layout_height="93dp"
+            android:layout_height="85dp"
             android:id="@+id/button_5"
             android:text="Fragment example"
             />
