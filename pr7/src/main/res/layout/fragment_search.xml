@@ -11,6 +11,7 @@
         android:id="@+id/searchInput"
         android:layout_width="299dp"
         android:layout_height="53dp"
+        android:layout_marginTop="32dp"
         android:background="@drawable/border"
         android:text="@string/emptySearch"
         android:textAlignment="center"
@@ -20,6 +21,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.244" />
+        app:layout_constraintVertical_bias="0.083" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
