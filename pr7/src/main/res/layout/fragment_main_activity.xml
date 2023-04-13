@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/cardview_dark_background"
     android:theme="@style/ThemeOverlay.MyApplication.FullscreenContainer"
-    tools:context=".MainActivityFragment">
+    tools:context=".UI.MainActivityFragment">
 
 
     <Button

@@ -1,4 +1,4 @@
-package com.example.pr7;
+package com.example.pr7.UI;
 
 import android.content.Intent;
 import android.net.Uri;
@@ -10,6 +10,8 @@ import android.widget.Button;
 
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.pr7.R;
 
 public class SecretActivity extends AppCompatActivity {
 

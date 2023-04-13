@@ -1,4 +1,4 @@
-package com.example.pr7;
+package com.example.pr7.UI;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -13,13 +13,18 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.lifecycle.ViewModelProvider;
+import androidx.navigation.Navigation;
+
+import com.example.pr7.CustomListAdapter;
+import com.example.pr7.Domain.LVViewModel;
+import com.example.pr7.Domain.MAFViewModel;
+import com.example.pr7.R;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 
 public class ListViewFragment extends Fragment {
-
-    private final static String TAG = "ListViewFragment";
 
     @Override
     public void onAttach(@NonNull Context context) {
@@ -38,6 +43,7 @@ public class ListViewFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
         ListView listView = view.findViewById(R.id.listView1);
 
+        LVViewModel lvViewModel = new ViewModelProvider(getActivity()).get(LVViewModel.class);
         String[] enter = getResources().getStringArray(R.array.list);
 
         ArrayList <String> names = new ArrayList<>(Arrays.asList(enter));
@@ -52,10 +58,9 @@ public class ListViewFragment extends Fragment {
                 @Override
                 public void onItemClick(AdapterView<?> parent, View v, int position, long id)
                 {
-                    Log.d(TAG, "ListView: Button " + position);
-                    Toast.makeText(getActivity(), "ListView: Button " + (position + 1), Toast.LENGTH_SHORT).show();
+                    lvViewModel.setMove(String.valueOf(position-1));
+                    Navigation.findNavController(view).navigate(R.id.action_listViewFragment_to_resultListFragment);
                 }
             });
     }
-
 }

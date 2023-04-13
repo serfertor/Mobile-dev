@@ -13,13 +13,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
         <service
-            android:name=".SecretService"
+            android:name=".UI.SecretService"
             android:enabled="true"
             android:exported="true"
             android:permission="TODO" />
 
         <activity
-            android:name=".SecretActivity"
+            android:name=".UI.SecretActivity"
             android:exported="false" />
         <activity
             android:name=".UI.MainActivity"

@@ -1,4 +1,4 @@
-package com.example.pr7;
+package com.example.pr7.UI;
 
 import android.app.Service;
 import android.content.Intent;
@@ -12,6 +12,7 @@ import android.view.WindowManager;
 
 import androidx.constraintlayout.widget.ConstraintLayout;
 
+import com.example.pr7.R;
 import com.example.pr7.UI.MainActivity;
 
 public class SecretService extends Service {
