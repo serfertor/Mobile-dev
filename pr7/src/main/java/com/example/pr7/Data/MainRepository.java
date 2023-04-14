@@ -1,7 +1,6 @@
 package com.example.pr7.Data;
 
 public class MainRepository {
-
     private static SearchDataSource searchDataSource = new SearchDataSource();
     private static ListsDataSource listsDataSource = new ListsDataSource();
     public static void create(String name, String p){
@@ -23,7 +22,6 @@ public class MainRepository {
         }
         return answer;
     }
-
     public void update(){}
 
     public void delete(){}

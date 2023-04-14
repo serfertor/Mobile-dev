@@ -23,7 +23,7 @@
     </fragment>
     <fragment
         android:id="@+id/recyclerViewFragment"
-        android:name="com.example.pr7.RecyclerViewFragment"
+        android:name="com.example.pr7.UI.RecyclerViewFragment"
         android:label="RecyclerViewFragment" >
         <action
             android:id="@+id/action_recyclerViewFragment_to_resultRecyclerFragment"

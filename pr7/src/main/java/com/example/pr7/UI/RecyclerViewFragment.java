@@ -1,12 +1,10 @@
-package com.example.pr7;
+package com.example.pr7.UI;
 
 import android.content.Context;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -17,8 +15,8 @@ import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.pr7.Domain.LVViewModel;
 import com.example.pr7.Domain.RVViewModel;
+import com.example.pr7.R;
 
 import java.util.ArrayList;
 import java.util.Arrays;

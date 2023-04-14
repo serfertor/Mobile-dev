@@ -1,9 +1,7 @@
 package com.example.pr7.Domain;
 
-import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
-
 import com.example.pr7.Data.MainRepository;
 
 public class MAFViewModel extends ViewModel {
@@ -17,5 +15,4 @@ public class MAFViewModel extends ViewModel {
         search = new MutableLiveData<>(MainRepository.read("Search", ""));
         return search.getValue();
     }
-
 }

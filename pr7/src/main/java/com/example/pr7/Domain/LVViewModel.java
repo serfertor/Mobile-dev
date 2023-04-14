@@ -8,7 +8,6 @@ import com.example.pr7.Data.MainRepository;
 
 public class LVViewModel extends ViewModel {
     MutableLiveData<String> move;
-
     public void setMove (String key){
         String answer = MainRepository.read("Lists", key);
         if (move == null){
@@ -16,7 +15,6 @@ public class LVViewModel extends ViewModel {
         }
         move.setValue(answer);
     }
-
     public LiveData<String> getMove(){
         return move;
     }
