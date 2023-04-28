@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cardview_dark_background"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".UI.WRFragment">
+
+    <EditText
+        android:id="@+id/nameFile"
+        android:layout_width="242dp"
+        android:layout_height="50dp"
+        android:hint="Имя файла"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"/>
+
+    <EditText
+        android:id="@+id/textFile"
+        android:layout_width="242dp"
+        android:layout_height="50dp"
+        android:hint="Введите текст"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"/>
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:columnCount="2"
+        android:orientation="horizontal"
+        android:useDefaultMargins="true">
+
+        <Button
+            android:id="@+id/W1"
+            android:layout_width="121dp"
+            android:layout_height="53dp"
+            android:backgroundTint="@color/orange_button"
+            android:text="app-specific\nwrite"
+            android:textSize="10dp" />
+
+        <Button
+            android:id="@+id/R1"
+            android:layout_width="121dp"
+            android:layout_height="53dp"
+            android:backgroundTint="@color/orange_button"
+            android:text="app-specific\nread"
+            android:textSize="10dp" />
+
+        <Button
+            android:id="@+id/W2"
+            android:layout_width="121dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/orange_button"
+            android:text="shared storage\nwrite"
+            android:textSize="10dp" />
+
+        <Button
+            android:id="@+id/R2"
+            android:layout_width="121dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/orange_button"
+            android:text="shared storage\nread"
+            android:textSize="10dp" />
+
+        <Button
+            android:id="@+id/W3"
+            android:layout_width="121dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/orange_button"
+            android:text="Shared Preferences\nwrite"
+            android:textSize="10dp" />
+
+        <Button
+            android:id="@+id/R3"
+            android:layout_width="121dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/orange_button"
+            android:text="Shared Preferences\nread"
+            android:textSize="10dp" />
+
+        <Button
+            android:id="@+id/W4"
+            android:layout_width="121dp"
+            android:layout_height="53dp"
+            android:backgroundTint="@color/orange_button"
+            android:text="database\nwrite"
+            android:textSize="10dp" />
+
+        <Button
+            android:id="@+id/R4"
+            android:layout_width="121dp"
+            android:layout_height="53dp"
+            android:backgroundTint="@color/orange_button"
+            android:text="database\nread"
+            android:textSize="10dp" />
+    </GridLayout>
+
+    <TextView
+        android:id="@+id/out"
+        android:layout_width="249dp"
+        android:layout_height="135dp"
+        android:background="@drawable/border"
+        android:hint="Вывод"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="17dp"/>
+
+</LinearLayout>
